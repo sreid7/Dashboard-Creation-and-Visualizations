@@ -24,6 +24,10 @@ Elastic Dashboard Creation
       **SIEM Visualization Example 1: Failed Logon Attempts (All Users)**
       NOT user.name: *$ AND winlog.channel.keyword: Security
       The AND winlog.channel.keyword: Security part is to ensure that no unrelated logs are accounted for.
+
+**UPDATED** (add multiple users in one script)
+    NOT (user.name: "john.doe" OR user.name: "admin" OR user.name: "system") AND winlog.channel.keyword: Security
+
     
 
     
