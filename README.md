@@ -16,7 +16,7 @@ Elastic Dashboard Creation
 10. Create another row as "host.hostname.keyword" (which represents the computer reporting the failed logon attempt.) (Display name = Event logged by)
 11. Create another row for "logon type". Using the "winlog.logon.type.keyword", (Used to display the type of method used to logon - either network or service. (Display name = Logon Type)
 12. Save and return the dashboard. Name "No title" the table and also the dashboard.
-13. To reopen dashboard, click the listed dashboard and then click on the gear - select edit icon to be taken to the full saved dashboard. 
+13. To reopen dashboard, click the listed dashboard and then click on the gear - select edit lens to be taken to the full saved dashboard. 
 
     **Usernames can be excluded by specifying additional filters ex. field = user.name.keyword, operator = is not, value = "username to be excluded".**
     **Computer accounts can be excluded by specifying the following KQL query and clicking on the "Update" button.
