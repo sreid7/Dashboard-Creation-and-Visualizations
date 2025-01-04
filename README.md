@@ -8,7 +8,7 @@ Elastic Dashboard Creation
 2. Click create dashboard
 3. Click create visualization
 4. Enter "last 15 years" for time range.
-5. Filter date for "failed logon attempts" - IDs that match **4625** – Failed logon attempt on a Windows system. Field = event.code, Operator = is, and Value = 4625
+5. Add Filter date for "failed logon attempts" - IDs that match **4625** = Failed logon attempt on a Windows system. Field = event.code, Operator = is, and Value = 4625
 6. Specify "Windows" as the Index pattern
 7. For the visualization type, use a table.
 8. Create a row. select a field = user.name.keyword, number of values = 1000, ranked by = count of records.
