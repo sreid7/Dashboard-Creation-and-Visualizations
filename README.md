@@ -28,6 +28,8 @@ Elastic Dashboard Creation
 **UPDATED** (add multiple users in one script) ---
     NOT (user.name: "john.doe" OR user.name: "admin" OR user.name: "system") AND winlog.channel.keyword: Security
 
+Ex. NOT user.name.keyword: ("WIN-OK9BH1BCKSD" OR "DESKTOP-DPOESND" OR "WIN-RMMGJA7T9TC") AND winlog.channel.keyword: "Security" 
+
     
 
     
