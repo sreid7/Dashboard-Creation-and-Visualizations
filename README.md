@@ -11,10 +11,10 @@ Elastic Dashboard Creation
 5. Add Filter date for "failed logon attempts" - IDs that match **4625** = Failed logon attempt on a Windows system. Field = event.code, Operator = is, and Value = 4625
 6. Specify "Windows" as the Index pattern
 7. For the visualization type, use a table.
-8. Create a row. select a field = user.name.keyword, number of values = 1000, ranked by = count of records.
-9. Add metrics, function = count, (The count of records will be the data, assuming that data will be preset).
-10. Create another row as "host.hostname.keyword" (which represents the computer reporting the failed logon attempt.)
-11. Create another row for "logon type". Using the "winlog.logon.type.keyword", (Used to display the type of method used to logon - either network or service.
+8. Create a row. select a field = user.name.keyword, number of values = 1000, ranked by = count of records. (Displaay name = Username)
+9. Add metrics, function = count, (The count of records will be the data, assuming that data will be preset). (Display name = # of logins)
+10. Create another row as "host.hostname.keyword" (which represents the computer reporting the failed logon attempt.) (Display name = Event logged by)
+11. Create another row for "logon type". Using the "winlog.logon.type.keyword", (Used to display the type of method used to logon - either network or service. (Display name = Logon Type)
 12. Save and return the dashboard. Name "No title" the table and also the dashboard.
 13. To reopen dashboard, click the listed dashboard and then click on the gear - select edit icon to be taken to the full saved dashboard. 
 
