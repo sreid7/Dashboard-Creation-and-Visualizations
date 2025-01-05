@@ -2,7 +2,7 @@
 Elastic Dashboard Creation
 
 
-**Failed Login Attempts**
+**Failed Logon Attempts**
 
 1. Delete existing dashboards
 2. Click create dashboard
