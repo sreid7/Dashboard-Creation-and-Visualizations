@@ -75,7 +75,7 @@ _____________
 10. Add row for the IP address to the host "related.ip.keyword" field that represents the IP of the computer initiating the succsessful RDP logon attempt, number of values = 1000, close row.
 
    **to find usernames with a specific name or word within the username, in the kql you can use "user.name:*admin*" as an example. This will list only the usernames with this word in it.
-   in this case of only filtering for service accounts, we can use "user.name: srv*
+   in this case of only filtering for service accounts, we can use "user.name: srv*".
 
 
     
