@@ -48,7 +48,9 @@ _____________
 8. Add Row, select field = user.name.keyword, number of values = 1000, close row.
 9. Add Metrics, select "count" (this will populate the table with data).
 10. Add Row, host.hostname.keyword, to show the machine where the failed logon attempt occurred. Number of values = 1000, close row.
-11. Click Save and Return, title the new visualization table.  
+11. Click Save and Return, title the new visualization table.
+
+    *to find usernames with a specific name or word within the username, in the kql you can use "user.name:*admin*" as an example. This will list only the usernames with this word in it.
 
     
 
