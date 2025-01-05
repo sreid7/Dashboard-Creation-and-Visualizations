@@ -82,6 +82,19 @@ _____________
 4732: A member was added to a security-enabled local group
 4733: A member was removed from a security-enabled local group
 
+1. Click edit on the dashboard (the pencil)
+2. Click create visualization
+3. Set the index pattern to "windows"
+4. Add filter field = event.code, operator = is one of, and value = 4732, and value 4733.
+5. Add filter field = group.name, operator = is, value = administrators.
+6. Add row (filter by type), user.name.keyword, number of values = 1000, close row
+7. Set visualization to "table"
+8. Add Metrics, select "count" (this will populate the table with data).
+9. Add row (Which user was added to or removed from the group?) (winlog.event_data.MemberSid.keyword field)
+10. Add row (To which group was the addition or the removal performed?) (double-checking that it is the "Administrators" one) (group.name.keyword field)
+11. Add row (Was the user added to or removed from the group?) (event.action.keyword field)
+12. Add row (On which machine did the action occur?) (host.name.keyword field)
+13. Add row (Date event was created) (event.created field) toggle custom time interval "on", minimum interval 1 day.
 
 
 
