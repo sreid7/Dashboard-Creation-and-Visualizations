@@ -77,6 +77,15 @@ _____________
    **to find usernames with a specific name or word within the username, in the kql you can use "user.name:*admin*" as an example. This will list only the usernames with this word in it.
    in this case of only filtering for service accounts, we can use "user.name: srv*".
 
+--------------------------
+
+**Users Added Or Removed From A Local Group (Within A Specific Timeframe)**
+
+4732: A member was added to a security-enabled local group
+4733: A member was removed from a security-enabled local group
+
+
+
 
     
 
