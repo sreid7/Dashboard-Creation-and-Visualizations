@@ -37,6 +37,7 @@ _____________
 **Disabled USer**
 
 4625 - failed login attempt
+Disabled user = 0xc0000072
 
 **New Visualization, Same Dashboard**
 
