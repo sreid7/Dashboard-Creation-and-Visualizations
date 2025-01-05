@@ -31,6 +31,25 @@ Elastic Dashboard Creation
 
 Ex. NOT user.name.keyword: ("WIN-OK9BH1BCKSD" OR "DESKTOP-DPOESND" OR "WIN-RMMGJA7T9TC") AND winlog.channel.keyword: "Security" 
 
+
+_____________
+
+**Disabled USer**
+
+**New Visualization, Same Dashboard**
+
+1. Click edit on the dashboard (the pencil)
+2. Click create visualization
+3. Set the index pattern to windows
+4. Add filter Field = event.code, Operator = is, and Value = 4625 (event.code: 4625)
+5. Add filter Field = winlog.event_data.SubStatus, Operator = is, and Value = 0xc0000072 (winlog.event_data.SubStatus:0xc0000072)
+6. Filter by type = user.name.keyword
+7. Set visualization to "Table"
+8. Add Row, select field = user.name.keyword, number of values = 1000, close row.
+9. Add Metrics, select "count" (this will populate the table with data).
+10. Add Row, host.hostname.keyword, to show the machine where the failed logon attempt occurred. Number of values = 1000, close row.
+11. Click Save and Return, title the new visualization table.  
+
     
 
     
