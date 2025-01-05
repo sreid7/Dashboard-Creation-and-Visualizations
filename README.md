@@ -1,7 +1,4 @@
 # SIEM Customization 
-
-
-# Failed Logon Attempts
 Elastic Dashboard Creation
 
 **Dashboard Creation**
